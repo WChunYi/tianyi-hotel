@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/tianyihotel.scss"
+    ],
+    "names": [],
+    "file": "tianyihotel.min.css"
+}
