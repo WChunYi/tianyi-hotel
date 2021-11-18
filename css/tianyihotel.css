@@ -9,10 +9,10 @@ body {
 }
 
 #bookinginfo {
-  padding: 20px;
+  padding: 30px;
   width: 100%;
   height: 100vh;
-  background-color: wheat;
+  background-image: url(../img/section3/roombackground.png);
 }
 
 #bookinginfo h1 {
@@ -53,6 +53,7 @@ body {
           order: 1;
   line-height: 1.5;
   display: none;
+  margin: 0 30px;
 }
 
 #bookinginfo .tabs .tabs-radio:checked + .tabs-label {
@@ -63,5 +64,17 @@ body {
 
 #bookinginfo .tabs .tabs-radio:checked + .tabs-label + .tabs-content {
   display: initial;
+}
+
+#traffic {
+  width: 100%;
+  height: 70vh;
+  background-color: #d5d5d5;
+}
+
+#traffic .traffic-map {
+  width: 300px;
+  height: 100px;
+  background-color: grey;
 }
 /*# sourceMappingURL=tianyihotel.css.map */
