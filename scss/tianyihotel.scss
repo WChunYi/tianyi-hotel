@@ -6,6 +6,7 @@
         body {
             margin: 0;
             padding: 0;
+            min-width: 470px;
         }
 
         html {
@@ -89,6 +90,11 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        @media screen and(max-width:900px){
+        width: 180px;
+        height: 150px;
+        top: 40%;
+        }
     }
 
     
@@ -103,6 +109,9 @@
         transform: translateX(-50%);
         filter:drop-shadow(0.1em 0.1em 0.05em rgba(0,0,0,.5));
         animation: go 1s infinite alternate-reverse cubic-bezier(0.33, 1, 0.68, 1);
+        @media screen and(max-width:900px){
+        display: none;
+        }
     }
     @keyframes go{
        100%{
@@ -217,7 +226,9 @@ label{
     }
     #switch:checked~nav{
         width: 600px;
-        // padding: 150px 50px;
+        @media screen and(max-width:470px){
+        width: 470px;
+        }
     }
     
     }
@@ -284,15 +295,52 @@ label{
 
 // *******************footer 區塊*******************
 footer{
-    background: url('../IMG/網頁用照片/背景/06-footer.png');
+    background: url('../IMG/網頁用照片/背景/07-footer.png');
     background-size: 100%;
-    width: 100%;
-    height: calc(100vw / 2.74);
-    .LOGO img{
-        width: 100px;
+    height: calc(100vw / 2.6);
+    @media screen and(max-width:1200px){
+        background-size: 200%;
+        height:unset;
+        background-position: center;
     }
-    .qrcode img{
-        width: 150px;
-        height: 150px;
+    @media screen and(max-width:768px){
+        background-size: 500%;
+    }
+    .footer-text{
+        position: relative;
+        min-height: calc(100% - 65px);
+        .return img{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: -50px;
+        right: 50%;
+        transform: translateX(50%) ;
+            &:hover{
+                filter:drop-shadow(0.1em 0.1em 0.5em rgb(0, 0, 0));
+            }
+        }
+        .LOGO img{
+            width: 250px;
+        }
+        a{
+            text-decoration: none;
+        } 
+        .qrcode div{
+            width: 170px;
+            height: 170px;
+            background-color: black;
+            img{
+                width: 140px;
+                height: 140px;
+                &:hover{
+                    filter:brightness(70%);
+                }
+            } 
+        } 
+    }
+    .copyright{
+        height: 65px;
+        background-color: rgba(0, 0, 0, 0.699);
     }
 }
