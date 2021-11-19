@@ -1,8 +1,28 @@
-// header 區塊
+* {
+            box-sizing: border-box;
+            font-family: 微軟正黑體;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            /* 可以讓網頁平滑移動 */
+            scroll-behavior: smooth;
+        }
+
+        /* animate框架的全域屬性 */
+        :root {
+            --animate-duration: 1000ms;
+            --animate-delay: 0.8s;
+        }
+// *******************header 區塊*******************
 #banner{
     position: relative;
     overflow: hidden;
-    /* 雲朵CSS ，不知道為何丟到SCSS不會動 */
+    /* 雲朵CSS */
     .cloud {
         width: 6144px;
         height: 100%;
@@ -28,7 +48,7 @@
             position: fixed;
             top: 50px;
             left: 50px;
-            z-index: 5;
+            z-index: 11;
             color: white;
             font-weight: bold;
             font-size: 36px;
@@ -100,7 +120,7 @@ label{
     background-color: unset;
     right: 50px;
     top: 50px;
-    z-index: 5;
+    z-index: 10;
     #switch{
         display: none;
     }
@@ -166,7 +186,7 @@ label{
         width: 0px;
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.877);
-        padding: 0;
+        padding-top: 100px;
         overflow: hidden;
         transition: 1s;
         margin: -50px -50px 0 0;
@@ -183,6 +203,7 @@ label{
                 letter-spacing: 0.5em;
                 display: block;
                 padding: 20px;
+                padding-right: 10px;
             }
         }
         .Tianyi{
@@ -201,7 +222,7 @@ label{
     
     }
 }
-
+// *******************main 區塊***********************
 #bookinginfo {
     padding: 30px;
     width: 100%;
@@ -261,12 +282,15 @@ label{
     }
 }
 
-// footer 區塊
+// *******************footer 區塊*******************
 footer{
     background: url('../IMG/網頁用照片/背景/06-footer.png');
     background-size: 100%;
     width: 100%;
     height: calc(100vw / 2.74);
+    .LOGO img{
+        width: 100px;
+    }
     .qrcode img{
         width: 150px;
         height: 150px;
