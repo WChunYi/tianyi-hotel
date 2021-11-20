@@ -298,61 +298,53 @@ label .hamburger #switch:checked ~ nav {
     width: 470px;
   }
 }
-#roomsinfo{
-  background: url(/IMG/網頁用照片/背景/03-房型介紹.png);
-  padding: 30px;
-  width: 100%;
-  height: 300vh;
 
-}
-#doubleroom-left {
-  width: 500px;
-  height: 300px;
-}
-
-#roomsinfo h1{
-  font-size: 24px;
-}
-#roomsinfo p  ::before{
-  content: "";
-  display:fixed;
-  background-color: #fff;
-}
-
-
-#room_detail{
-  height: 100px;
-  width: 400px;
- text-align: justify;
-}
-#imgins{
-  width: 400px;
-  height: 300px;
-background:url(/IMG/網頁用照片/區塊2/二人房/room2-1.png);
-display:fixed;
-flex-wrap: nowrap;
-}
-
-#imgins>div{
-  width: 30px;
-  margin: 10px;
-  background-color: darkorange;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-}
 #concept {
   background: url(../IMG/網頁用照片/背景/02-關於天一.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  position: relative;
+  background-size: 105%;
   width: 100%;
   height: calc(100vw / 1.2);
+}
+
+@media screen and (max-width: 1600px) {
+  #concept {
+    height: unset;
+    background-position: center;
+    background-size: 200%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #concept {
+    background-size: 500%;
+  }
 }
 
 #concept .counter img {
   width: 1000px;
   margin-left: -300px;
   margin-top: 100px;
+}
+
+@media screen and (max-width: 1245px) {
+  #concept .counter img {
+    margin-left: -100px;
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #concept .counter img {
+    margin-top: -600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #concept .counter img {
+    width: 400px;
+    margin-left: 0px;
+  }
 }
 
 #concept .container h3 {
@@ -364,6 +356,12 @@ flex-wrap: nowrap;
   padding: 0;
   text-shadow: black 0.1em 0.1em 0.2em;
   letter-spacing: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  #concept .container h3 {
+    font-size: 24px;
+  }
 }
 
 #concept .container p {
@@ -379,6 +377,12 @@ flex-wrap: nowrap;
   letter-spacing: 5px;
 }
 
+@media screen and (max-width: 768px) {
+  #concept .container p {
+    font-size: 18px;
+  }
+}
+
 #concept .container .about {
   padding-top: 250px;
   z-index: 3;
@@ -389,9 +393,28 @@ flex-wrap: nowrap;
   z-index: 3;
 }
 
+@media screen and (max-width: 1245px) {
+  #concept .container .found {
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #concept .container .found {
+    margin-left: 0;
+  }
+}
+
 #concept .container .star {
   margin-top: -100px;
   z-index: 2;
+}
+
+@media screen and (max-width: 1245px) {
+  #concept .container .star {
+    margin-top: 40px;
+  }
 }
 
 #concept .container .star img {
@@ -403,6 +426,24 @@ flex-wrap: nowrap;
       -ms-writing-mode: unset;
           writing-mode: unset;
   margin-top: 0;
+}
+
+#concept .bg-room {
+  position: absolute;
+  bottom: -15%;
+  left: 15%;
+}
+
+#concept .bg-LOGO {
+  position: absolute;
+  bottom: -10%;
+  right: 15%;
+}
+
+@media screen and (max-width: 1245px) {
+  #concept .bg-LOGO {
+    display: none;
+  }
 }
 
 #bookinginfo {
