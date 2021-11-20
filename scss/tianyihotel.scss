@@ -283,7 +283,7 @@ label{
 
 #traffic {
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     background-color: rgb(199, 189, 189);
     padding: 30px;
     
@@ -294,24 +294,37 @@ label{
     .traffic-content {
         display: flex;
         justify-content: center;
-        margin: 50px;
-        gap:100px;
-    }
-    .traffic-map {
-        width: 300px;
-        height: 100px;
-        background-color: rgb(117, 122, 122);
-    
-    .traffic-info{
-      
-        flex-direction: column;
-        width: 200px;
-        height: 100px;
-        background-color:burlywood;
-        
+        margin: 100px 0;
+        gap:70px;
 
-    }   
-}
+        .traffic-map {
+            width: 400px;
+            height: 250px;
+            background-color: rgb(117, 122, 122);
+        }
+        .traffic-info{  
+            flex-direction: column;
+  
+       }
+    }
+    
+    @media screen and(max-width:768px){
+        
+        .traffic-content {
+            flex-direction: column;
+            margin: 0 auto;
+            align-items: center;
+            gap:20px;
+    
+            .traffic-map {
+              
+            }
+            .traffic-info{  
+              
+           }
+        }
+    }
+    
 }
 
 // *******************footer 區塊*******************
