@@ -295,13 +295,9 @@ label{
         display: flex;
         justify-content: center;
         margin: 100px 0;
-        gap:70px;
+        gap:70px;   
 
-        .traffic-map {
-            width: 400px;
-            height: 250px;
-            background-color: rgb(117, 122, 122);
-        }
+    
         .traffic-info{  
             flex-direction: column;
   
@@ -309,6 +305,8 @@ label{
     }
     
     @media screen and(max-width:768px){
+
+        height: 100vh;
         
         .traffic-content {
             flex-direction: column;
@@ -316,12 +314,7 @@ label{
             align-items: center;
             gap:20px;
     
-            .traffic-map {
-              
-            }
-            .traffic-info{  
-              
-           }
+        
         }
     }
     
