@@ -238,14 +238,34 @@ label{
 // *******************main 區塊***********************
 #concept{
     background: url(../IMG/網頁用照片/背景/02-關於天一.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+    position: relative;
+    background-size: 105%;
     width: 100%;
     height: calc(100vw / 1.2);
+    @media screen and(max-width:1600px){
+    height:unset;
+    background-position: center;
+    background-size: 200%;
+    }
+    @media screen and(max-width:992px){
+    background-size: 500%;
+    }
+    
     .counter img{
         width: 1000px;
         margin-left: -300px;
         margin-top: 100px;
+        @media screen and(max-width:1245px){
+        margin-left: -100px;
+        width: 800px;
+        }
+        @media screen and(max-width:992px){
+        margin-top: -600px;
+        }
+        @media screen and(max-width:768px){
+        width: 400px;
+        margin-left: 0px;
+        }
     }
     .container{
         h3{
@@ -255,7 +275,10 @@ label{
          margin: 0;
          padding: 0;
          text-shadow: black 0.1em 0.1em 0.2em;
-         letter-spacing:5px
+         letter-spacing:5px;
+         @media screen and(max-width:768px){
+        font-size: 24px;
+        }
         }
         p{
          writing-mode: vertical-rl;
@@ -266,7 +289,10 @@ label{
          padding: 0;
          text-shadow: black 0.1em 0.1em 0.2em;
          line-height: 2;
-         letter-spacing:5px
+         letter-spacing:5px;
+         @media screen and(max-width:768px){
+        font-size: 18px;
+        }
         }
         .about{
         padding-top: 250px;
@@ -275,11 +301,21 @@ label{
         .found{
         margin-top: -100px;
         z-index: 3;
+        @media screen and(max-width:1245px){
+        margin-left: 100px;
+        margin-top: 10px;
+        }
+        @media screen and(max-width:992px){
+        margin-left: 0;
+        }
         }
         
         .star{
-            margin-top: -100px;
+        margin-top: -100px;
         z-index: 2;
+        @media screen and(max-width:1245px){
+        margin-top: 40px;
+        }
             img{
             width: 365px;
             }
@@ -287,6 +323,19 @@ label{
             writing-mode:unset; 
             margin-top: 0;
             }
+        }
+    }
+    .bg-room{
+    position: absolute;
+    bottom: -15%;
+    left:15%;
+    }
+    .bg-LOGO{
+    position: absolute;
+    bottom: -10%;
+    right:15%;
+    @media screen and(max-width:1245px){
+        display: none;
         }
     }
 }
