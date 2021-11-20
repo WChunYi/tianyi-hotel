@@ -293,7 +293,7 @@ label .hamburger #switch:checked ~ nav {
   width: 600px;
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 600px) {
   label .hamburger #switch:checked ~ nav {
     width: 470px;
   }
@@ -319,16 +319,12 @@ label .hamburger #switch:checked ~ nav {
   background-color: #fff;
 }
 
-#roomsinfo p{
-
-}
 
 #room_detail{
   height: 100px;
   width: 400px;
  text-align: justify;
 }
-
 #imgins{
   width: 400px;
   height: 300px;
@@ -345,6 +341,70 @@ flex-wrap: nowrap;
   line-height: 75px;
   font-size: 30px;
 }
+#concept {
+  background: url(../IMG/網頁用照片/背景/02-關於天一.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: calc(100vw / 1.2);
+}
+
+#concept .counter img {
+  width: 1000px;
+  margin-left: -300px;
+  margin-top: 100px;
+}
+
+#concept .container h3 {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  letter-spacing: 5px;
+}
+
+#concept .container p {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 24px;
+  margin-top: 40px;
+  padding: 0;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  line-height: 2;
+  letter-spacing: 5px;
+}
+
+#concept .container .about {
+  padding-top: 250px;
+  z-index: 3;
+}
+
+#concept .container .found {
+  margin-top: -100px;
+  z-index: 3;
+}
+
+#concept .container .star {
+  margin-top: -100px;
+  z-index: 2;
+}
+
+#concept .container .star img {
+  width: 365px;
+}
+
+#concept .container .star p {
+  -webkit-writing-mode: unset;
+      -ms-writing-mode: unset;
+          writing-mode: unset;
+  margin-top: 0;
+}
+
 #bookinginfo {
   padding: 30px;
   width: 100%;
@@ -425,12 +485,6 @@ flex-wrap: nowrap;
   gap: 70px;
 }
 
-#traffic .traffic-content .traffic-map {
-  width: 400px;
-  height: 250px;
-  background-color: #757a7a;
-}
-
 #traffic .traffic-content .traffic-info {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -439,6 +493,9 @@ flex-wrap: nowrap;
 }
 
 @media screen and (max-width: 768px) {
+  #traffic {
+    height: 100vh;
+  }
   #traffic .traffic-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -460,9 +517,9 @@ footer {
 
 @media screen and (max-width: 1200px) {
   footer {
+    background-position: center;
     background-size: 200%;
     height: unset;
-    background-position: center;
   }
 }
 

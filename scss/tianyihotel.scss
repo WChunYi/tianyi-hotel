@@ -23,6 +23,7 @@
 #banner{
     position: relative;
     overflow: hidden;
+  
     /* 雲朵CSS */
     .cloud {
         width: 6144px;
@@ -226,14 +227,72 @@ label{
     }
     #switch:checked~nav{
         width: 600px;
-        @media screen and(max-width:470px){
+        @media screen and(max-width:600px){
         width: 470px;
         }
     }
     
     }
 }
-// ******************* main 區塊***********************
+
+// *******************main 區塊***********************
+#concept{
+    background: url(../IMG/網頁用照片/背景/02-關於天一.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: calc(100vw / 1.2);
+    .counter img{
+        width: 1000px;
+        margin-left: -300px;
+        margin-top: 100px;
+    }
+    .container{
+        h3{
+        // 文字垂直排列
+         writing-mode: vertical-rl;
+         font-size: 36px;
+         margin: 0;
+         padding: 0;
+         text-shadow: black 0.1em 0.1em 0.2em;
+         letter-spacing:5px
+        }
+        p{
+         writing-mode: vertical-rl;
+         // 數字豎立排列
+         text-orientation: upright;
+         font-size: 24px;
+         margin-top: 40px;
+         padding: 0;
+         text-shadow: black 0.1em 0.1em 0.2em;
+         line-height: 2;
+         letter-spacing:5px
+        }
+        .about{
+        padding-top: 250px;
+        z-index: 3;
+        }
+        .found{
+        margin-top: -100px;
+        z-index: 3;
+        }
+        
+        .star{
+            margin-top: -100px;
+        z-index: 2;
+            img{
+            width: 365px;
+            }
+            p{
+            writing-mode:unset; 
+            margin-top: 0;
+            }
+        }
+    }
+}
+
+// *******************訂房資訊***********************
+
 #bookinginfo {
     padding: 30px;
     width: 100%;
@@ -295,13 +354,9 @@ label{
         display: flex;
         justify-content: center;
         margin: 100px 0;
-        gap:70px;
+        gap:70px;   
 
-        .traffic-map {
-            width: 400px;
-            height: 250px;
-            background-color: rgb(117, 122, 122);
-        }
+    
         .traffic-info{  
             flex-direction: column;
   
@@ -309,6 +364,8 @@ label{
     }
     
     @media screen and(max-width:768px){
+
+        height: 100vh;
         
         .traffic-content {
             flex-direction: column;
@@ -316,12 +373,7 @@ label{
             align-items: center;
             gap:20px;
     
-            .traffic-map {
-              
-            }
-            .traffic-info{  
-              
-           }
+        
         }
     }
     
@@ -333,9 +385,9 @@ footer{
     background-size: 100%;
     height: calc(100vw / 2.6);
     @media screen and(max-width:1200px){
+       background-position: center;
         background-size: 200%;
         height:unset;
-        background-position: center;
     }
     @media screen and(max-width:768px){
         background-size: 500%;
