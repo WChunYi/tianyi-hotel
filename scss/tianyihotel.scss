@@ -350,42 +350,62 @@ label{
     }
 }
 // *******************房型介紹***********************
+
 #roomsinfo {
+    
     padding: 100px;
     width: 100%;
-    height: 300%;
+    height: 400%;
     background-image: url(../IMG/網頁用照片/背景/03-房型介紹.png);
-    h2{
-    font-size: 36px;
-    }
-    p{
-    font-size: 24px;
-    }
-    ul{
-        font-size: 16px;
-        width: 300px;
+    .doubleroom{
+        padding: 0 0 100px  0;
         display: flex;
-        justify-content:space-around;
-        flex-wrap:wrap;
+        .room_detail ul{
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            li{
+            width: 25%;
+        
+            }
+        }
+    }
+    .tripleroom{
+        padding: 0 0 100px  0;
+
+     display: flex;
+     .room_detail ul{
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        li{
+        width: 25%;
+
+        .tripleroom-right{
+            clear: left;
+            float: right;
+        }
 
     }
-    .imgins{
-        display: flex;
-        float: right;
-        flex-wrap: nowrap;
-    }
-    .show_btn{
-        display: flex;
-        flex-wrap: nowrap;
-    }
-    .show_btn>div{
-        background-color: peru;
-        width: 30px;
-     margin: 10px;
-     text-align: center;
-    }
+    
+        }
+        }
+    .quadroom{
 
+         display: flex;
+        .room_detail ul{
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+                li{
+                width: 25%;
+                }
+        }
+        }
+    
 }
+
+
 
 // *******************訂房資訊***********************
 

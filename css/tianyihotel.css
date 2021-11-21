@@ -465,52 +465,72 @@ label .hamburger #switch:checked ~ nav {
 #roomsinfo {
   padding: 100px;
   width: 100%;
-  height: 300%;
+  height: 400%;
   background-image: url(../IMG/網頁用照片/背景/03-房型介紹.png);
 }
 
-#roomsinfo h2 {
-  font-size: 36px;
-}
-
-#roomsinfo p {
-  font-size: 24px;
-}
-
-#roomsinfo ul {
-  font-size: 16px;
-  width: 300px;
+#roomsinfo .doubleroom {
+  padding: 0 0 100px  0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+}
+
+#roomsinfo .doubleroom .room_detail ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-#roomsinfo .imgins {
+#roomsinfo .doubleroom .room_detail ul li {
+  width: 25%;
+}
+
+#roomsinfo .tripleroom {
+  padding: 0 0 100px  0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#roomsinfo .tripleroom .room_detail ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#roomsinfo .tripleroom .room_detail ul li {
+  width: 25%;
+}
+
+#roomsinfo .tripleroom .room_detail ul li .tripleroom-right {
+  clear: left;
   float: right;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
 }
 
-#roomsinfo .show_btn {
+#roomsinfo .quadroom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
 }
 
-#roomsinfo .show_btn > div {
-  background-color: peru;
-  width: 30px;
-  margin: 10px;
-  text-align: center;
+#roomsinfo .quadroom .room_detail ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#roomsinfo .quadroom .room_detail ul li {
+  width: 25%;
 }
 
 #bookinginfo {
