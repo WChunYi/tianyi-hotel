@@ -520,10 +520,6 @@ label .hamburger #switch:checked ~ nav {
   background-image: url(../IMG/網頁用照片/背景/04-訂房資訊.png);
 }
 
-#bookinginfo .container-booking {
-  width: 1140px;
-}
-
 #bookinginfo h1 {
   text-align: center;
 }
