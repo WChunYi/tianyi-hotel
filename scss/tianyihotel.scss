@@ -437,10 +437,30 @@ label{
     text-shadow: black 0.1em 0.1em 0.2em;
     background: url(../IMG/網頁用照片/背景/05-周邊景點.png);
     background-size: contain;
-    .attraction-pic{
-        h1{
-            font-weight: bold;
+    height: calc(100vw / 1.6);
+    @media screen and(max-width:1230px){
+       background-position: center;
+        background-size: 300%;
+        height:unset;
+    }
+    @media screen and(max-width:768px){
+        background-image: linear-gradient(rgba(37, 44, 83, 0.5), rgba(56, 138, 76, 0.5)),url("../IMG/網頁用照片/背景/03-房型介紹.png");
+    }
+    h1{
+        margin: 50px;
+        margin-top: 165px;
+        @media screen and(max-width:1650px){
+        margin: 20px;
+        margin-top: 20px;
         }
+    }
+    p{
+        margin-bottom: 40px;
+        @media screen and(max-width:1650px){
+        margin-bottom: 10px;
+        }
+    }
+    .attraction-pic{
        .card{
            h4{
             margin: 0;

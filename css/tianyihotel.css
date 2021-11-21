@@ -571,10 +571,44 @@ label .hamburger #switch:checked ~ nav {
   text-shadow: black 0.1em 0.1em 0.2em;
   background: url(../IMG/網頁用照片/背景/05-周邊景點.png);
   background-size: contain;
+  height: calc(100vw / 1.6);
 }
 
-#attraction .attraction-pic h1 {
-  font-weight: bold;
+@media screen and (max-width: 1230px) {
+  #attraction {
+    background-position: center;
+    background-size: 300%;
+    height: unset;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #attraction {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 44, 83, 0.5)), to(rgba(56, 138, 76, 0.5))), url("../IMG/網頁用照片/背景/03-房型介紹.png");
+    background-image: linear-gradient(rgba(37, 44, 83, 0.5), rgba(56, 138, 76, 0.5)), url("../IMG/網頁用照片/背景/03-房型介紹.png");
+  }
+}
+
+#attraction h1 {
+  margin: 50px;
+  margin-top: 165px;
+}
+
+@media screen and (max-width: 1650px) {
+  #attraction h1 {
+    margin: 20px;
+    margin-top: 20px;
+  }
+}
+
+#attraction p {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1650px) {
+  #attraction p {
+    margin-bottom: 10px;
+  }
 }
 
 #attraction .attraction-pic .card h4 {
