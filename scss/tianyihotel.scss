@@ -128,6 +128,7 @@
         transform: translateX(-50%);
         filter:drop-shadow(0.1em 0.1em 0.05em rgba(0,0,0,.5));
         animation: go 1s infinite alternate-reverse cubic-bezier(0.33, 1, 0.68, 1);
+        //縮排向下箭頭消失
         @media screen and(max-width:900px){
         display: none;
         }
@@ -357,9 +358,11 @@ label{
     width: 100%;
     height: 400%;
     background-image: url(../IMG/網頁用照片/背景/03-房型介紹.png);
+    //兩人房
     .doubleroom{
         padding: 0 0 100px  0;
         display: flex;
+        //兩人房
         .room_detail ul{
             padding: 0;
             display: flex;
@@ -370,10 +373,12 @@ label{
             }
         }
     }
+    //三人房
     .tripleroom{
         padding: 0 0 100px  0;
 
      display: flex;
+
      .room_detail ul{
         padding: 0;
         display: flex;
