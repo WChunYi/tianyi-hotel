@@ -347,7 +347,43 @@ label{
     }
 }
 // *******************房型介紹***********************
+#roomsinfo {
+    padding: 100px;
+    width: 100%;
+    height: 300%;
+    background: url(/IMG/網頁用照片/背景/03-房型介紹.png);
+    h2{
+    font-size: 36px;
+    }
+    p{
+    font-size: 24px;
+    }
+    ul{
+        font-size: 16px;
+        width: 300px;
+        display: flex;
+        justify-content:space-around;
+        flex-wrap:wrap;
 
+    }
+    .imgins{
+        display: flex;
+        float: right;
+        flex-wrap: nowrap;
+    }
+    .show_btn{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .show_btn>div{
+        background-color: peru;
+        width: 30px;
+     margin: 10px;
+     text-align: center;
+    }
+
+}
+    
 // *******************訂房資訊***********************
 
 #bookinginfo {
