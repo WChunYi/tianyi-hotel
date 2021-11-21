@@ -647,6 +647,9 @@ label .hamburger #switch:checked ~ nav {
   width: 100%;
   background-color: #c7bdc1;
   padding: 150px 0;
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
 }
 
 #traffic h1 {
@@ -671,7 +674,39 @@ label .hamburger #switch:checked ~ nav {
           flex-direction: column;
 }
 
+#traffic .bg-map {
+  position: absolute;
+  left: -30%;
+  top: 30%;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1600px) {
+  #traffic .bg-map {
+    left: -50%;
+  }
+}
+
 @media screen and (max-width: 1200px) {
+  #traffic .bg-map {
+    display: none;
+  }
+}
+
+#traffic .bg-LOGO {
+  position: absolute;
+  right: 10%;
+  z-index: -1;
+}
+
+#traffic .LOGO2 {
+  top: -10%;
+}
+
+@media screen and (max-width: 1200px) {
+  #traffic {
+    padding: 60px 0;
+  }
   #traffic h1 {
     margin-bottom: 20px;
   }

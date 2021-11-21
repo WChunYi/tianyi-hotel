@@ -494,7 +494,9 @@ label{
     width: 100%;
     background-color: rgb(199, 189, 193);
     padding: 150px 0;
-    
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
     h1 {
         text-align: center;
         margin-bottom:100px;
@@ -508,8 +510,28 @@ label{
   
        }
     }
-    
+    .bg-map{
+        position: absolute;
+        left: -30%;
+        top: 30%;
+        z-index: -1;
+        @media screen and(max-width:1600px){
+        left: -50%;
+        }
+        @media screen and(max-width:1200px){
+        display: none;
+        }
+    }
+    .bg-LOGO{
+        position: absolute;
+        right: 10%;
+        z-index: -1;
+    }
+    .LOGO2{
+        top: -10%;
+    }
     @media screen and(max-width:1200px){
+        padding: 60px 0;
         h1{
         margin-bottom:20px;
         }
