@@ -34,6 +34,10 @@ h1 {
   }
 }
 
+h2 {
+  font-size: 24px;
+}
+
 p {
   font-size: 24px;
   padding: 0;
@@ -459,10 +463,10 @@ label .hamburger #switch:checked ~ nav {
 }
 
 #roomsinfo {
-  padding: 100px;
+  padding: 30px;
   width: 100%;
   height: 300%;
-  background: url(/IMG/網頁用照片/背景/03-房型介紹.png);
+  background-image: url(../IMG/網頁用照片/背景/03-房型介紹.png);
 }
 
 #roomsinfo h2 {
@@ -512,12 +516,15 @@ label .hamburger #switch:checked ~ nav {
 #bookinginfo {
   padding: 30px;
   width: 100%;
-  height: 100vh;
   background-image: url(../IMG/網頁用照片/背景/04-訂房資訊.png);
 }
 
 #bookinginfo h1 {
   text-align: center;
+}
+
+#bookinginfo p {
+  font-size: 16px;
 }
 
 #bookinginfo .tabs {
@@ -537,6 +544,7 @@ label .hamburger #switch:checked ~ nav {
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 18px;
+  width: 120px;
 }
 
 #bookinginfo .tabs .tabs-radio {
@@ -545,9 +553,8 @@ label .hamburger #switch:checked ~ nav {
 
 #bookinginfo .tabs .tabs-content {
   width: 100%;
-  height: 450px;
   border-radius: 10px;
-  padding: 10px;
+  padding: 15px;
   background-color: tan;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -557,35 +564,121 @@ label .hamburger #switch:checked ~ nav {
   margin: 0 30px;
 }
 
+#bookinginfo .tabs .tabs-content #booking {
+  line-height: 30px;
+}
+
 #bookinginfo .tabs .tabs-radio:checked + .tabs-label {
-  font-weight: bold;
-  color: #301f08;
-  border-bottom: 2px solid #301f08;
+  background-color: #72502c;
+  color: white;
 }
 
 #bookinginfo .tabs .tabs-radio:checked + .tabs-label + .tabs-content {
   display: initial;
 }
 
+#attraction {
+  text-shadow: black 0.1em 0.1em 0.2em;
+  background: url(../IMG/網頁用照片/背景/05-周邊景點.png);
+  background-size: contain;
+  height: calc(100vw / 1.6);
+}
+
+@media screen and (max-width: 1230px) {
+  #attraction {
+    background-position: center;
+    background-size: 300%;
+    height: unset;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #attraction {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 44, 83, 0.5)), to(rgba(56, 138, 76, 0.5))), url("../IMG/網頁用照片/背景/03-房型介紹.png");
+    background-image: linear-gradient(rgba(37, 44, 83, 0.5), rgba(56, 138, 76, 0.5)), url("../IMG/網頁用照片/背景/03-房型介紹.png");
+  }
+}
+
+#attraction h1 {
+  margin: 50px;
+  margin-top: 165px;
+}
+
+@media screen and (max-width: 1650px) {
+  #attraction h1 {
+    margin: 20px;
+    margin-top: 20px;
+  }
+}
+
+#attraction p {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1650px) {
+  #attraction p {
+    margin-bottom: 10px;
+  }
+}
+
+#attraction .attraction-pic .card h4 {
+  margin: 0;
+  font-size: 18px;
+  opacity: 0;
+}
+
+#attraction .attraction-pic .card p {
+  font-size: 16px;
+  opacity: 0;
+}
+
+#attraction .attraction-pic .card:hover {
+  opacity: 1;
+}
+
+#attraction .attraction-pic .card:hover h4 {
+  opacity: 1;
+}
+
+#attraction .attraction-pic .card:hover p {
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 1;
+}
+
+#attraction .attraction-pic .card:hover img {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-filter: brightness(10%);
+          filter: brightness(10%);
+}
+
 #traffic {
   width: 100%;
-  height: 100vh;
-  background-color: #c7bdbd;
-  padding: 30px;
+  background-color: #c7bdc1;
+  padding: 150px 0;
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
 }
 
 #traffic h1 {
   text-align: center;
+  margin-bottom: 100px;
+}
+
+#traffic p {
+  font-size: 18px;
+  margin: 30px 0;
 }
 
 #traffic .traffic-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 100px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 70px;
 }
 
@@ -596,9 +689,41 @@ label .hamburger #switch:checked ~ nav {
           flex-direction: column;
 }
 
-@media screen and (max-width: 768px) {
+#traffic .bg-map {
+  position: absolute;
+  left: -30%;
+  top: 30%;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1600px) {
+  #traffic .bg-map {
+    left: -50%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #traffic .bg-map {
+    display: none;
+  }
+}
+
+#traffic .bg-LOGO {
+  position: absolute;
+  right: 10%;
+  z-index: -1;
+}
+
+#traffic .LOGO2 {
+  top: -10%;
+}
+
+@media screen and (max-width: 1200px) {
   #traffic {
-    height: 100vh;
+    padding: 60px 0;
+  }
+  #traffic h1 {
+    margin-bottom: 20px;
   }
   #traffic .traffic-content {
     -webkit-box-orient: vertical;
@@ -680,5 +805,9 @@ footer .footer-text .qrcode div img:hover {
 footer .copyright {
   height: 65px;
   background-color: rgba(0, 0, 0, 0.699);
+}
+
+footer .copyright p {
+  font-size: 14px;
 }
 /*# sourceMappingURL=tianyihotel.css.map */
