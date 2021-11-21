@@ -388,6 +388,12 @@ label .hamburger #switch:checked ~ nav {
   z-index: 3;
 }
 
+@media screen and (max-width: 768px) {
+  #concept .container .about {
+    padding-top: 130px;
+  }
+}
+
 #concept .container .found {
   margin-top: -100px;
   z-index: 3;
@@ -445,8 +451,6 @@ label .hamburger #switch:checked ~ nav {
     display: none;
   }
 }
-
-
 
 #bookinginfo {
   padding: 30px;
