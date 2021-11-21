@@ -358,14 +358,22 @@ label{
     width: 100%;
     height: 400%;
     background-image: url(../IMG/網頁用照片/背景/03-房型介紹.png);
+    h2{
+        font-size: 36px;
+        @media screen and(max-width:600px){
+            font-size:  12px;
+        }
+    }
+    p{
+        font: size 24px;
+        @media screen and(max-width:600px){
+            font-size:  10px;
+        }
+    }
     //兩人房
     .doubleroom{
         padding: 0 0 100px  0;
         display: flex;
-        @media screen and(max-width:600px){
-            font-size:0.417em;
-
-}
 
         //兩人房
         .room_detail ul{
@@ -374,10 +382,13 @@ label{
             flex-wrap: wrap;
             li{
             width: 25%;
-        
+            @media screen and(max-width:600px){
+                font-size:  10px;
+            }
+    
             }
         }
-    }
+    }    
     //三人房
     .tripleroom{
         padding: 0 0 100px  0;
@@ -390,6 +401,9 @@ label{
         flex-wrap: wrap;
         li{
         width: 25%;
+        @media screen and(max-width:600px){
+            font-size:  10px;
+        }
 
         .tripleroom-right{
             clear: left;
@@ -409,8 +423,12 @@ label{
             flex-wrap: wrap;
                 li{
                 width: 25%;
+                @media screen and(max-width:600px){
+                    font-size:  10px;
+                    }
+        
                 }
-        }
+            }
         }
     
 }
@@ -604,6 +622,7 @@ label{
        } 
     }
 }
+
 
 // 交通資訊
 #traffic {
