@@ -428,7 +428,7 @@ label{
             margin: 0 30px;
 
             // .equipmentinfo {
-            //     float: right;
+            // margin-left: 20px;    
             // }
            
 
@@ -438,9 +438,8 @@ label{
             }
         }
         .tabs-radio:checked + .tabs-label {
-            font-weight: bold;
-            color:rgb(48, 31, 8);
-            border-bottom: 2px solid rgb(48, 31, 8);
+            background-color:rgb(114, 80, 44);
+            color: white;
           }
         .tabs-radio:checked + .tabs-label + .tabs-content {
             display: initial;
