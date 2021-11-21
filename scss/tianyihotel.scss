@@ -515,7 +515,7 @@ label{
     background-color: rgb(199, 189, 193);
     padding: 150px 0;
     position: relative;
-    z-index: -1;
+    z-index: 0;
     overflow: hidden;
     h1 {
         text-align: center;
@@ -549,7 +549,7 @@ label{
     .bg-LOGO{
         position: absolute;
         right: 10%;
-        z-index: -1;
+        z-index: 0;
     }
     .LOGO2{
         top: -10%;
