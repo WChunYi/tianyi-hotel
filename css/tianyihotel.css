@@ -326,21 +326,21 @@ label .hamburger #switch:checked ~ nav {
  text-align: justify;
 }
 #imgins{
-  width: 400px;
-  height: 300px;
 background:url(/IMG/網頁用照片/區塊2/二人房/room2-1.png);
 display:fixed;
 flex-wrap: nowrap;
 }
+.show_btn>a:link {
+color: black;
+}
 
-#imgins>div{
+.imgins div {
   width: 30px;
-  margin: 10px;
-  background-color: darkorange;
+  background-color:peru;
   text-align: center;
-  line-height: 75px;
   font-size: 30px;
 }
+
 #concept {
   background: url(../IMG/網頁用照片/背景/02-關於天一.png);
   background-size: contain;
