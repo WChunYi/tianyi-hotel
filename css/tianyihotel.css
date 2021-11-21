@@ -588,7 +588,7 @@ label .hamburger #switch:checked ~ nav {
 
 #bookinginfo .tabs .tabs-content .equipmentinfo {
   position: absolute;
-  right: 300px;
+  right: 30%;
 }
 
 #bookinginfo .tabs .tabs-content .equipmentinfo li {
@@ -610,6 +610,63 @@ label .hamburger #switch:checked ~ nav {
 
 #bookinginfo .tabs .tabs-radio:checked + .tabs-label + .tabs-content {
   display: initial;
+}
+
+@media screen and (max-width: 1230px) {
+  #bookinginfo .tabs-content .equipmentinfo {
+    right: 25% !important;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  #bookinginfo {
+    padding: 30px !important;
+  }
+  #bookinginfo .tabs-content {
+    line-height: 1.5 !important;
+  }
+  #bookinginfo .tabs-content .equipmentinfo {
+    right: 20% !important;
+  }
+}
+
+@media screen and (max-width: 898px) {
+  #bookinginfo .tabs-content .equipmentinfo {
+    right: 16% !important;
+  }
+  #bookinginfo .tabs-content .equipmentinfo li {
+    font-size: 18px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #bookinginfo .tabs-content {
+    padding: 20px !important;
+  }
+  #bookinginfo .tabs-content .equipmentinfo {
+    right: 12% !important;
+  }
+  #bookinginfo .tabs-content .equipmentinfo li {
+    font-size: 14px !important;
+  }
+  #bookinginfo .tabs-content #booking {
+    font-size: 14px !important;
+  }
+  #bookinginfo .tabs-content #cancel {
+    font-size: 12px !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #bookinginfo .tabs-content {
+    padding: 10px;
+  }
+  #bookinginfo .tabs-content .equipmentinfo {
+    right: 12% !important;
+  }
+  #bookinginfo .tabs-content .equipmentinfo li {
+    font-size: 10px !important;
+  }
 }
 
 #attraction {
