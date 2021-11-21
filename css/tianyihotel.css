@@ -22,6 +22,29 @@ html {
   --animate-delay: 0.8s;
 }
 
+h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+p {
+  font-size: 24px;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 18px;
+  }
+}
+
 #banner {
   position: relative;
   overflow: hidden;
@@ -347,21 +370,12 @@ label .hamburger #switch:checked ~ nav {
   }
 }
 
-#concept .container h3 {
+#concept .container h1 {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
-  font-size: 36px;
-  margin: 0;
-  padding: 0;
   text-shadow: black 0.1em 0.1em 0.2em;
   letter-spacing: 5px;
-}
-
-@media screen and (max-width: 768px) {
-  #concept .container h3 {
-    font-size: 24px;
-  }
 }
 
 #concept .container p {
@@ -369,18 +383,10 @@ label .hamburger #switch:checked ~ nav {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   text-orientation: upright;
-  font-size: 24px;
   margin-top: 40px;
-  padding: 0;
   text-shadow: black 0.1em 0.1em 0.2em;
   line-height: 2;
   letter-spacing: 5px;
-}
-
-@media screen and (max-width: 768px) {
-  #concept .container p {
-    font-size: 18px;
-  }
 }
 
 #concept .container .about {
