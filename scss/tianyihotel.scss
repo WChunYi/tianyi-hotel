@@ -351,6 +351,7 @@ label{
 }
 // *******************房型介紹***********************
 #roomsinfo {
+    .container{
     padding: 100px;
     width: 100%;
     height: 300%;
@@ -369,7 +370,7 @@ label{
         flex-wrap:wrap;
 
     }
-    .imgins{
+    .room_show{
         display: flex;
         float: right;
         flex-wrap: nowrap;
@@ -377,14 +378,16 @@ label{
     .show_btn{
         display: flex;
         flex-wrap: nowrap;
+
     }
     .show_btn>div{
+        display: flex;
         background-color: peru;
         width: 30px;
-     margin: 10px;
+        margin: 100px;
      text-align: center;
+        }   
     }
-
 }
 
 // *******************訂房資訊***********************
