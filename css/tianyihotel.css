@@ -129,7 +129,7 @@ p {
 #banner .LOGO-TOP {
   width: 240px;
   height: 200px;
-  -webkit-filter: drop-shadow(0.3em 0.3em 0.05em #00000080);
+  -webkit-filter: drop-shadow(0.3em 0.3em 0.05em rgba(0, 0, 0, 0.5));
           filter: drop-shadow(0.3em 0.3em 0.05em rgba(0, 0, 0, 0.5));
   position: absolute;
   z-index: 2;
@@ -544,6 +544,7 @@ label .hamburger #switch:checked ~ nav {
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 18px;
+  width: 120px;
 }
 
 #bookinginfo .tabs .tabs-radio {
@@ -568,9 +569,8 @@ label .hamburger #switch:checked ~ nav {
 }
 
 #bookinginfo .tabs .tabs-radio:checked + .tabs-label {
-  font-weight: bold;
-  color: #301f08;
-  border-bottom: 2px solid #301f08;
+  background-color: #72502c;
+  color: white;
 }
 
 #bookinginfo .tabs .tabs-radio:checked + .tabs-label + .tabs-content {
