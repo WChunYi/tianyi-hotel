@@ -419,7 +419,7 @@ label{
           }
         .tabs-content {
             width: 100%;
-            height: 450px;
+            // height: 450px;
             border-radius: 10px;
             padding: 15px;
             background-color: tan;
@@ -428,8 +428,13 @@ label{
             display: none;
             margin: 0 30px;
 
+            #carousel-content {
+                display: flex;
+            }
+
             #booking {
                 line-height: 30px;
+
             }
         }
         .tabs-radio:checked + .tabs-label {
