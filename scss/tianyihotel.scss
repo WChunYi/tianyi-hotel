@@ -383,7 +383,7 @@ label{
     }
 
 }
-    
+
 // *******************訂房資訊***********************
 
 #bookinginfo {
@@ -433,7 +433,41 @@ label{
     
 }
 // ******************周邊景點**********************
-
+#attraction{
+    text-shadow: black 0.1em 0.1em 0.2em;
+    background: url(../IMG/網頁用照片/背景/05-周邊景點.png);
+    background-size: contain;
+    .attraction-pic{
+        h1{
+            font-weight: bold;
+        }
+       .card{
+           h4{
+            margin: 0;
+            font-size: 18px;
+            opacity: 0;
+           }
+           p{
+            font-size: 16px;
+            opacity: 0;
+           }
+           &:hover{
+               h4{
+                opacity: 1;
+                }
+                p{
+                transition: 1s;
+                opacity: 1;
+                }
+               opacity: 1;
+               img {
+                transition: 1s;
+                filter:brightness(10%);
+                    }
+           }
+       } 
+    }
+}
 
 // 交通資訊
 #traffic {
@@ -524,5 +558,8 @@ footer{
     .copyright{
         height: 65px;
         background-color: rgba(0, 0, 0, 0.699);
+        p{
+            font-size: 14px;
+        }
     }
 }

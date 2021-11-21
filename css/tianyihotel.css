@@ -567,6 +567,48 @@ label .hamburger #switch:checked ~ nav {
   display: initial;
 }
 
+#attraction {
+  text-shadow: black 0.1em 0.1em 0.2em;
+  background: url(../IMG/網頁用照片/背景/05-周邊景點.png);
+  background-size: contain;
+}
+
+#attraction .attraction-pic h1 {
+  font-weight: bold;
+}
+
+#attraction .attraction-pic .card h4 {
+  margin: 0;
+  font-size: 18px;
+  opacity: 0;
+}
+
+#attraction .attraction-pic .card p {
+  font-size: 16px;
+  opacity: 0;
+}
+
+#attraction .attraction-pic .card:hover {
+  opacity: 1;
+}
+
+#attraction .attraction-pic .card:hover h4 {
+  opacity: 1;
+}
+
+#attraction .attraction-pic .card:hover p {
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 1;
+}
+
+#attraction .attraction-pic .card:hover img {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-filter: brightness(10%);
+          filter: brightness(10%);
+}
+
 #traffic {
   width: 100%;
   height: 100vh;
@@ -680,5 +722,9 @@ footer .footer-text .qrcode div img:hover {
 footer .copyright {
   height: 65px;
   background-color: rgba(0, 0, 0, 0.699);
+}
+
+footer .copyright p {
+  font-size: 14px;
 }
 /*# sourceMappingURL=tianyihotel.css.map */
