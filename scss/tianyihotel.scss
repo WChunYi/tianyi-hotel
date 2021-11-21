@@ -410,9 +410,11 @@ label{
 // *******************訂房資訊***********************
 
 #bookinginfo {
-    padding: 30px;
+    padding: 100px;
     width: 100%;
     background-image: url(../IMG/網頁用照片/背景/04-訂房資訊.png);
+
+   
 
     h1 {
         text-align: center;
@@ -430,10 +432,11 @@ label{
         .tabs-label{
             background-color: rgb(201, 133, 43);
             margin: 15px;
-            padding: 10px 20px;
+            padding: 10px 15px;
             border-radius: 5px;
             font-size: 18px;
-            width: 120px;
+            width: 100px;
+            margin-top: 30px;
         }
         .tabs-radio {
             display: none;
@@ -441,21 +444,30 @@ label{
         .tabs-content {
             width: 100%;
             border-radius: 10px;
-            padding: 15px;
+            padding: 40px;
             background-color: tan;
             order: 1;
-            line-height: 1.5;
+            line-height: 2;
             display: none;
-            margin: 0 30px;
+            margin:30px;
+            position: relative;
 
-            // .equipmentinfo {
-            // margin-left: 20px;    
-            // }
+            .equipmentinfo {
+                position: absolute;
+                right:300px;
+                li {
+                    font-size: 20px;
+                }
+            }
            
 
             #booking {
                 line-height: 30px;
-
+              
+                ul
+                    {
+                    list-style-position:inside;
+                    }
             }
         }
         .tabs-radio:checked + .tabs-label {
