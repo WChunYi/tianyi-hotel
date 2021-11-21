@@ -466,7 +466,7 @@ label .hamburger #switch:checked ~ nav {
   padding: 100px;
   width: 100%;
   height: 300%;
-  background: url(/IMG/網頁用照片/背景/03-房型介紹.png);
+  background-image: url(../IMG/網頁用照片/背景/03-房型介紹.png);
 }
 
 #roomsinfo h2 {
