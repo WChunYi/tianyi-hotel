@@ -514,7 +514,7 @@ label .hamburger #switch:checked ~ nav {
 }
 
 #bookinginfo {
-  padding: 30px;
+  padding: 100px;
   width: 100%;
   background-image: url(../IMG/網頁用照片/背景/04-訂房資訊.png);
 }
@@ -541,10 +541,11 @@ label .hamburger #switch:checked ~ nav {
 #bookinginfo .tabs .tabs-label {
   background-color: #c9852b;
   margin: 15px;
-  padding: 10px 20px;
+  padding: 10px 15px;
   border-radius: 5px;
   font-size: 18px;
-  width: 120px;
+  width: 100px;
+  margin-top: 30px;
 }
 
 #bookinginfo .tabs .tabs-radio {
@@ -554,18 +555,32 @@ label .hamburger #switch:checked ~ nav {
 #bookinginfo .tabs .tabs-content {
   width: 100%;
   border-radius: 10px;
-  padding: 15px;
+  padding: 40px;
   background-color: tan;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
-  line-height: 1.5;
+  line-height: 2;
   display: none;
-  margin: 0 30px;
+  margin: 30px;
+  position: relative;
+}
+
+#bookinginfo .tabs .tabs-content .equipmentinfo {
+  position: absolute;
+  right: 300px;
+}
+
+#bookinginfo .tabs .tabs-content .equipmentinfo li {
+  font-size: 20px;
 }
 
 #bookinginfo .tabs .tabs-content #booking {
   line-height: 30px;
+}
+
+#bookinginfo .tabs .tabs-content #booking ul {
+  list-style-position: inside;
 }
 
 #bookinginfo .tabs .tabs-radio:checked + .tabs-label {
