@@ -362,6 +362,11 @@ label{
     .doubleroom{
         padding: 0 0 100px  0;
         display: flex;
+        @media screen and(max-width:600px){
+            font-size:0.417em;
+
+}
+
         //兩人房
         .room_detail ul{
             padding: 0;

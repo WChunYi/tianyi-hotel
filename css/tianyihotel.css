@@ -476,6 +476,12 @@ label .hamburger #switch:checked ~ nav {
   display: flex;
 }
 
+@media screen and (max-width: 600px) {
+  #roomsinfo .doubleroom {
+    font-size: 0.417em;
+  }
+}
+
 #roomsinfo .doubleroom .room_detail ul {
   padding: 0;
   display: -webkit-box;
