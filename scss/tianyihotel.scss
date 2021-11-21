@@ -19,6 +19,21 @@
             --animate-duration: 1000ms;
             --animate-delay: 0.8s;
         }
+        h1{
+           font-size: 36px;
+           margin: 0;
+           padding: 0;
+           @media screen and(max-width:768px){
+           font-size: 24px;
+           }
+        }
+        p{
+        font-size: 24px;
+        padding: 0;
+        @media screen and(max-width:768px){
+        font-size: 18px;
+        }
+        }
 // *******************header 區塊*******************
 #banner{
     position: relative;
@@ -268,31 +283,20 @@ label{
         }
     }
     .container{
-        h3{
+        h1{
         // 文字垂直排列
          writing-mode: vertical-rl;
-         font-size: 36px;
-         margin: 0;
-         padding: 0;
          text-shadow: black 0.1em 0.1em 0.2em;
          letter-spacing:5px;
-         @media screen and(max-width:768px){
-        font-size: 24px;
-        }
         }
         p{
          writing-mode: vertical-rl;
          // 數字豎立排列
          text-orientation: upright;
-         font-size: 24px;
          margin-top: 40px;
-         padding: 0;
          text-shadow: black 0.1em 0.1em 0.2em;
          line-height: 2;
          letter-spacing:5px;
-         @media screen and(max-width:768px){
-        font-size: 18px;
-        }
         }
         .about{
         padding-top: 250px;
@@ -402,6 +406,9 @@ label{
     }
     
 }
+// ******************周邊景點**********************
+
+
 // 交通資訊
 #traffic {
     width: 100%;
