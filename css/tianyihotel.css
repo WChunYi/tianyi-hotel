@@ -544,6 +544,7 @@ label .hamburger #switch:checked ~ nav {
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 18px;
+  width: 120px;
 }
 
 #bookinginfo .tabs .tabs-radio {
