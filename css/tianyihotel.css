@@ -34,6 +34,10 @@ h1 {
   }
 }
 
+h2 {
+  font-size: 24px;
+}
+
 p {
   font-size: 24px;
   padding: 0;
@@ -655,6 +659,11 @@ label .hamburger #switch:checked ~ nav {
 #traffic h1 {
   text-align: center;
   margin-bottom: 100px;
+}
+
+#traffic p {
+  font-size: 18px;
+  margin: 30px 0;
 }
 
 #traffic .traffic-content {
