@@ -598,12 +598,11 @@ label .hamburger #switch:checked ~ nav {
 
 #bookinginfo .tabs .tabs-label {
   background-color: #c9852b;
-  margin: 15px;
+  margin: 30px 15px;
   padding: 10px 15px;
   border-radius: 5px;
   font-size: 18px;
   width: 100px;
-  margin-top: 30px;
 }
 
 #bookinginfo .tabs .tabs-radio {
@@ -657,10 +656,8 @@ label .hamburger #switch:checked ~ nav {
 }
 
 @media screen and (max-width: 1080px) {
-  #bookinginfo {
-    padding: 30px !important;
-  }
   #bookinginfo .tabs-content {
+    padding: 30px !important;
     line-height: 1.5 !important;
   }
   #bookinginfo .tabs-content .equipmentinfo {
@@ -669,6 +666,10 @@ label .hamburger #switch:checked ~ nav {
 }
 
 @media screen and (max-width: 898px) {
+  #bookinginfo .tabs-label {
+    width: 25% !important;
+    margin: 10px !important;
+  }
   #bookinginfo .tabs-content .equipmentinfo {
     right: 16% !important;
   }
@@ -679,31 +680,52 @@ label .hamburger #switch:checked ~ nav {
 
 @media screen and (max-width: 768px) {
   #bookinginfo .tabs-content {
-    padding: 20px !important;
+    padding: 30px 30px 100px 30px !important;
+    margin: 20px !important;
   }
   #bookinginfo .tabs-content .equipmentinfo {
-    right: 12% !important;
+    top: 85% !important;
+    max-width: 85%;
+  }
+  #bookinginfo .tabs-content .equipmentinfo ul {
+    list-style-position: inside;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   #bookinginfo .tabs-content .equipmentinfo li {
-    font-size: 14px !important;
-  }
-  #bookinginfo .tabs-content #booking {
-    font-size: 14px !important;
+    font-size: 12px !important;
   }
   #bookinginfo .tabs-content #cancel {
     font-size: 12px !important;
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 560px) {
+  #bookinginfo .tabs-label {
+    width: 16% !important;
+    padding: 5px 10px !important;
+  }
   #bookinginfo .tabs-content {
-    padding: 10px;
+    width: 100% !important;
+    padding: 20px 20px 120px 20px !important;
   }
   #bookinginfo .tabs-content .equipmentinfo {
-    right: 12% !important;
+    top: 70% !important;
   }
   #bookinginfo .tabs-content .equipmentinfo li {
     font-size: 10px !important;
+  }
+}
+
+@media screen and (max-width: 467px) {
+  #bookinginfo .tabs-content .equipmentinfo {
+    top: 65% !important;
+  }
+  #bookinginfo .tabs-content .equipmentinfo li {
+    font-size: 8px !important;
   }
 }
 

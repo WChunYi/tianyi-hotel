@@ -442,8 +442,6 @@ label{
     width: 100%;
     background-image: url(../IMG/網頁用照片/背景/04-訂房資訊.png);
 
-   
-
     h1 {
         text-align: center;
     }
@@ -458,12 +456,11 @@ label{
         
         .tabs-label{
             background-color: rgb(201, 133, 43);
-            margin: 15px;
+            margin: 30px 15px;
             padding: 10px 15px;
             border-radius: 5px;
             font-size: 18px;
             width: 100px;
-            margin-top: 30px;
         }
         .tabs-radio {
             display: none;
@@ -515,16 +512,22 @@ label{
      }
 
      @media screen and(max-width:1080px){
-        padding: 30px !important;
+
         .tabs-content {
+            padding: 30px !important;
             line-height: 1.5 !important;
             .equipmentinfo {
                 right: 20% !important; 
             }
         }
      }
-     @media screen and(max-width:898px){
+     @media screen and(max-width:898px){ 
+        .tabs-label {
+            width: 25% !important;
+            margin: 10px !important;
+        }
         .tabs-content {
+
             .equipmentinfo {
                 right: 16% !important; 
                 li {
@@ -534,17 +537,25 @@ label{
         }
      }
     @media screen and(max-width:768px){
+       
         .tabs-content {
-            padding: 20px !important;
+            padding: 30px 30px 100px 30px !important;
+            margin: 20px !important;
             .equipmentinfo {
-                right: 12% !important; 
-                li {
-                    font-size: 14px !important;
+                top: 85% !important; 
+                max-width: 85%;
+                ul
+                {
+                    list-style-position:inside;
+                    display: flex;
+                    flex-wrap: wrap;
                 }
+                    li {
+                        font-size: 12px !important; 
+                    }
+                
             }
-            #booking {
-                font-size: 14px !important;
-            }
+        
             #cancel {
                 
                     font-size: 12px !important;
@@ -553,13 +564,30 @@ label{
         }
     }
 
-    @media screen and(max-width:550px){
+    @media screen and(max-width:560px){
+        .tabs-label {
+            width: 16% !important;
+            padding: 5px 10px !important;
+        }
         .tabs-content {
-            padding: 10px ;
+            width: 100% !important; 
+            padding: 20px 20px 120px 20px !important;
             .equipmentinfo {
-                right: 12% !important; 
+                 top: 70% !important; 
                 li {
                     font-size: 10px !important;
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:467px){
+        .tabs-content {
+            // padding: 20px 20px 100px 20px !important;
+            .equipmentinfo {
+                top: 65% !important;      
+                li {
+                    font-size: 8px !important;
                 }
             }
         }
