@@ -6,7 +6,6 @@
         body {
             margin: 0;
             padding: 0;
-            min-width: 470px;
         }
 
         html {
@@ -508,9 +507,6 @@ label{
     background-image: url(../IMG/網頁用照片/背景/04-訂房資訊.png);
     background-size: cover;
     position: relative;
-    .container{
-    overflow: hidden;
-    }
     @media screen and(max-width:1230px){
     padding: 50px 0;
     }
