@@ -533,7 +533,7 @@ label .hamburger #switch:checked ~ nav {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   top: -30%;
-  right: 0;
+  right: -2%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -541,20 +541,26 @@ label .hamburger #switch:checked ~ nav {
     -webkit-writing-mode: unset;
         -ms-writing-mode: unset;
             writing-mode: unset;
-    top: -10%;
+    top: -30%;
     right: 50%;
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1200px) {
+  #roomsinfo .carousel h4 {
+    top: -20%;
+  }
+}
+
+@media screen and (max-width: 992px) {
   #roomsinfo .carousel h4 {
     top: -30%;
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
   #roomsinfo .carousel h4 {
     font-size: 36px;
     top: -35%;
