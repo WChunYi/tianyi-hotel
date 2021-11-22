@@ -191,6 +191,7 @@ label .hamburger {
   right: 50px;
   top: 50px;
   z-index: 10;
+  cursor: pointer;
 }
 
 label .hamburger #switch {
@@ -307,6 +308,13 @@ label .hamburger nav ul a {
   padding-right: 10px;
 }
 
+label .hamburger nav ul a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
+
 label .hamburger nav .Tianyi {
   font-family: 特明體;
   margin: auto;
@@ -395,7 +403,7 @@ label .hamburger #switch:checked ~ nav {
 
 #concept .container .about {
   padding-top: 250px;
-  z-index: 3;
+  z-index: 1;
 }
 
 @media screen and (max-width: 768px) {
@@ -448,9 +456,11 @@ label .hamburger #switch:checked ~ nav {
   position: absolute;
   bottom: -15%;
   left: 15%;
+  z-index: 2;
 }
 
 #concept .bg-LOGO {
+  z-index: 2;
   position: absolute;
   bottom: -10%;
   right: 15%;
@@ -463,19 +473,92 @@ label .hamburger #switch:checked ~ nav {
 }
 
 #roomsinfo {
-  padding: 100px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  padding: 100px 0;
+  padding-top: 200px;
   width: 100%;
   height: 400%;
   background-image: url(../IMG/網頁用照片/背景/03-房型介紹.png);
+  background-size: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  #roomsinfo {
+    background-size: 500%;
+  }
+}
+
+#roomsinfo ul {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  #roomsinfo ul {
+    margin: 0;
+  }
+}
+
+#roomsinfo .carousel {
+  position: relative;
+}
+
+#roomsinfo .carousel:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  color: #8f5407;
+}
+
+#roomsinfo .carousel h4 {
+  margin: 30px 0;
+  font-family: 標楷體;
+  font-size: 48px;
+  font-weight: 500;
+  position: absolute;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  top: -30%;
+  right: 0;
+  text-shadow: white 0.1em 0.1em 0.5em;
+}
+
+@media screen and (max-width: 1200px) {
+  #roomsinfo .carousel h4 {
+    -webkit-writing-mode: unset;
+        -ms-writing-mode: unset;
+            writing-mode: unset;
+    top: -10%;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #roomsinfo .carousel h4 {
+    top: -30%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #roomsinfo .carousel h4 {
+    font-size: 36px;
+    top: -35%;
+  }
 }
 
 #roomsinfo h2 {
   font-size: 36px;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 600px) {
   #roomsinfo h2 {
-    font-size: 12px;
+    font-size: 24px;
   }
 }
 
@@ -485,11 +568,12 @@ label .hamburger #switch:checked ~ nav {
 
 @media screen and (max-width: 600px) {
   #roomsinfo p {
-    font-size: 10px;
+    font-size: 18px;
   }
 }
 
 #roomsinfo .doubleroom {
+  z-index: 10;
   padding: 0 0 100px  0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -511,7 +595,9 @@ label .hamburger #switch:checked ~ nav {
 
 @media screen and (max-width: 600px) {
   #roomsinfo .doubleroom .room_detail ul li {
-    font-size: 10px;
+    font-size: 16px;
+    list-style-type: none;
+    font-weight: 500;
   }
 }
 
@@ -537,13 +623,10 @@ label .hamburger #switch:checked ~ nav {
 
 @media screen and (max-width: 600px) {
   #roomsinfo .tripleroom .room_detail ul li {
-    font-size: 10px;
+    font-size: 16px;
+    list-style-type: none;
+    font-weight: 500;
   }
-}
-
-#roomsinfo .tripleroom .room_detail ul li .tripleroom-right {
-  clear: left;
-  float: right;
 }
 
 #roomsinfo .quadroom {
@@ -567,7 +650,9 @@ label .hamburger #switch:checked ~ nav {
 
 @media screen and (max-width: 600px) {
   #roomsinfo .quadroom .room_detail ul li {
-    font-size: 10px;
+    font-size: 16px;
+    list-style-type: none;
+    font-weight: 500;
   }
 }
 
@@ -575,6 +660,14 @@ label .hamburger #switch:checked ~ nav {
   padding: 100px;
   width: 100%;
   background-image: url(../IMG/網頁用照片/背景/04-訂房資訊.png);
+  background-size: cover;
+  position: relative;
+}
+
+@media screen and (max-width: 1230px) {
+  #bookinginfo {
+    padding: 50px 0;
+  }
 }
 
 #bookinginfo h1 {
@@ -603,6 +696,15 @@ label .hamburger #switch:checked ~ nav {
   border-radius: 5px;
   font-size: 18px;
   width: 100px;
+  cursor: pointer;
+}
+
+#bookinginfo .tabs .tabs-label:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  color: white;
 }
 
 #bookinginfo .tabs .tabs-radio {
@@ -712,27 +814,46 @@ label .hamburger #switch:checked ~ nav {
     width: 100% !important;
     padding: 20px 20px 120px 20px !important;
   }
-  #bookinginfo .tabs-content .equipmentinfo {
-    top: 70% !important;
-  }
   #bookinginfo .tabs-content .equipmentinfo li {
     font-size: 10px !important;
   }
 }
 
 @media screen and (max-width: 467px) {
-  #bookinginfo .tabs-content .equipmentinfo {
-    top: 65% !important;
-  }
   #bookinginfo .tabs-content .equipmentinfo li {
     font-size: 8px !important;
+  }
+}
+
+#bookinginfo .bg-LOGO {
+  position: absolute;
+  top: -150px;
+  right: 40%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1230px) {
+  #bookinginfo .bg-LOGO {
+    top: -200PX;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  #bookinginfo .bg-LOGO {
+    top: -250px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #bookinginfo .bg-LOGO {
+    right: 20%;
   }
 }
 
 #attraction {
   text-shadow: black 0.1em 0.1em 0.2em;
   background: url(../IMG/網頁用照片/背景/05-周邊景點.png);
-  background-size: contain;
+  background-size: 105%;
   height: calc(100vw / 1.6);
 }
 
@@ -868,6 +989,7 @@ label .hamburger #switch:checked ~ nav {
 
 #traffic .LOGO2 {
   top: -10%;
+  z-index: -1;
 }
 
 @media screen and (max-width: 1200px) {
@@ -928,6 +1050,8 @@ footer .footer-text .return img {
 footer .footer-text .return img:hover {
   -webkit-filter: drop-shadow(0.1em 0.1em 0.5em black);
           filter: drop-shadow(0.1em 0.1em 0.5em black);
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
 }
 
 footer .footer-text .LOGO img {
