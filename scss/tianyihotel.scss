@@ -265,11 +265,11 @@ label{
     position: relative;
     background-size: 105%;
     width: 100%;
-    height: calc(100vw / 1.2);
+    height: calc(100vw / 1.5);
     @media screen and(max-width:1600px){
     height:unset;
     background-position: center;
-    background-size: 200%;
+    background-size: 205%;
     }
     @media screen and(max-width:992px){
     background-size: 500%;
@@ -506,16 +506,14 @@ label{
 // *******************訂房資訊***********************
 
 #bookinginfo {
-    padding: 100px;
+    padding: 50px;
     width: 100%;
     background-image: url(../IMG/網頁用照片/背景/04-訂房資訊.png);
     background-size: cover;
     position: relative;
-    @media screen and(max-width:1230px){
-    padding: 50px 0;
-    }
     h1 {
         text-align: center;
+        margin-bottom: 30px;
     }
 
     p {
@@ -673,12 +671,9 @@ label{
 
     .bg-LOGO{
         position: absolute;
-        top: -150px;
+        top: -200px;
         right: 40%;
         z-index: 1;
-        @media screen and(max-width:1230px){
-        top:-200PX;
-        }
         @media screen and(max-width:920px){
         top:-250px;
         }
@@ -692,7 +687,7 @@ label{
     text-shadow: black 0.1em 0.1em 0.2em;
     background: url(../IMG/網頁用照片/背景/05-周邊景點.png);
     background-size: 105%;
-    height: calc(100vw / 1.6);
+    height: calc(100vw / 1.8);
     
     @media screen and(max-width:1230px){
        background-position: center;
@@ -704,11 +699,6 @@ label{
     }
     h1{
         margin: 50px;
-        margin-top: 165px;
-        @media screen and(max-width:1650px){
-        margin: 20px;
-        margin-top: 20px;
-        }
     }
     p{
         margin-bottom: 40px;
@@ -718,6 +708,7 @@ label{
     }
     .attraction-pic{
        .card{
+           margin-bottom: 20px;
            h4{
             margin: 0;
             font-size: 18px;
@@ -750,13 +741,17 @@ label{
 #traffic {
     width: 100%;
     background-color: rgb(199, 189, 193);
-    padding: 150px 0;
+    padding: 50px 0;
     position: relative;
     z-index: 0;
     overflow: hidden;
+    .container{
+        margin-bottom: 50px;
+    }
     h1 {
         text-align: center;
         margin-bottom:100px;
+        padding-bottom: 40px;
     }
     p{
         font-size: 18px;
@@ -793,7 +788,6 @@ label{
         z-index: -1;
     }
     @media screen and(max-width:1200px){
-        padding: 60px 0;
         h1{
         margin-bottom:20px;
         }

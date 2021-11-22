@@ -339,14 +339,14 @@ label .hamburger #switch:checked ~ nav {
   position: relative;
   background-size: 105%;
   width: 100%;
-  height: calc(100vw / 1.2);
+  height: calc(100vw / 1.5);
 }
 
 @media screen and (max-width: 1600px) {
   #concept {
     height: unset;
     background-position: center;
-    background-size: 200%;
+    background-size: 205%;
   }
 }
 
@@ -673,21 +673,16 @@ label .hamburger #switch:checked ~ nav {
 }
 
 #bookinginfo {
-  padding: 100px;
+  padding: 50px;
   width: 100%;
   background-image: url(../IMG/網頁用照片/背景/04-訂房資訊.png);
   background-size: cover;
   position: relative;
 }
 
-@media screen and (max-width: 1230px) {
-  #bookinginfo {
-    padding: 50px 0;
-  }
-}
-
 #bookinginfo h1 {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 #bookinginfo p {
@@ -843,15 +838,9 @@ label .hamburger #switch:checked ~ nav {
 
 #bookinginfo .bg-LOGO {
   position: absolute;
-  top: -150px;
+  top: -200px;
   right: 40%;
   z-index: 1;
-}
-
-@media screen and (max-width: 1230px) {
-  #bookinginfo .bg-LOGO {
-    top: -200PX;
-  }
 }
 
 @media screen and (max-width: 920px) {
@@ -870,7 +859,7 @@ label .hamburger #switch:checked ~ nav {
   text-shadow: black 0.1em 0.1em 0.2em;
   background: url(../IMG/網頁用照片/背景/05-周邊景點.png);
   background-size: 105%;
-  height: calc(100vw / 1.6);
+  height: calc(100vw / 1.8);
 }
 
 @media screen and (max-width: 1230px) {
@@ -890,14 +879,6 @@ label .hamburger #switch:checked ~ nav {
 
 #attraction h1 {
   margin: 50px;
-  margin-top: 165px;
-}
-
-@media screen and (max-width: 1650px) {
-  #attraction h1 {
-    margin: 20px;
-    margin-top: 20px;
-  }
 }
 
 #attraction p {
@@ -908,6 +889,10 @@ label .hamburger #switch:checked ~ nav {
   #attraction p {
     margin-bottom: 10px;
   }
+}
+
+#attraction .attraction-pic .card {
+  margin-bottom: 20px;
 }
 
 #attraction .attraction-pic .card h4 {
@@ -945,15 +930,20 @@ label .hamburger #switch:checked ~ nav {
 #traffic {
   width: 100%;
   background-color: #c7bdc1;
-  padding: 150px 0;
+  padding: 50px 0;
   position: relative;
   z-index: 0;
   overflow: hidden;
 }
 
+#traffic .container {
+  margin-bottom: 50px;
+}
+
 #traffic h1 {
   text-align: center;
   margin-bottom: 100px;
+  padding-bottom: 40px;
 }
 
 #traffic p {
@@ -1009,9 +999,6 @@ label .hamburger #switch:checked ~ nav {
 }
 
 @media screen and (max-width: 1200px) {
-  #traffic {
-    padding: 60px 0;
-  }
   #traffic h1 {
     margin-bottom: 20px;
   }
