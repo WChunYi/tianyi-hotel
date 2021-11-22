@@ -504,12 +504,23 @@ label .hamburger #switch:checked ~ nav {
   position: relative;
 }
 
+#roomsinfo .carousel .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+#roomsinfo .carousel span {
+  display: none;
+}
+
 #roomsinfo .carousel:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-filter: brightness(90%);
           filter: brightness(90%);
-  color: #ec8703;
+  color: white;
+  text-shadow: 0 0 0.1em #976c0f, 0 0 0.1em #976c0f;
 }
 
 #roomsinfo .carousel h4 {
@@ -523,7 +534,6 @@ label .hamburger #switch:checked ~ nav {
           writing-mode: vertical-rl;
   top: -30%;
   right: 0;
-  text-shadow: white 0.1em 0.1em 0.5em;
 }
 
 @media screen and (max-width: 1200px) {
