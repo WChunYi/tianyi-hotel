@@ -509,7 +509,7 @@ label .hamburger #switch:checked ~ nav {
           transform: scale(1.2);
   -webkit-filter: brightness(90%);
           filter: brightness(90%);
-  color: #8f5407;
+  color: #ec8703;
 }
 
 #roomsinfo .carousel h4 {
