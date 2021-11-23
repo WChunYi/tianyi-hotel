@@ -674,7 +674,7 @@ label .hamburger #switch:checked ~ nav {
 }
 
 #bookinginfo {
-  padding: 50px;
+  padding: 50px 0;
   width: 100%;
   background-image: url(../IMG/網頁用照片/背景/04-訂房資訊.png);
   background-size: cover;
