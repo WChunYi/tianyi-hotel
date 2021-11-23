@@ -688,12 +688,12 @@ label{
     background: url(../IMG/網頁用照片/背景/05-周邊景點.png);
     background-size: 105%;
     height: calc(100vw / 1.8);
-    
-    @media screen and(max-width:1230px){
+    @media screen and(max-width:1600px){
        background-position: center;
         background-size: 300%;
         height:unset;
     }
+    
     @media screen and(max-width:768px){
         background-image: linear-gradient(rgba(37, 44, 83, 0.5), rgba(56, 138, 76, 0.5)),url("../IMG/網頁用照片/背景/03-房型介紹.png");
     }
@@ -750,8 +750,7 @@ label{
     }
     h1 {
         text-align: center;
-        margin-bottom:100px;
-        padding-bottom: 40px;
+        margin-bottom:50px;
     }
     p{
         font-size: 18px;
@@ -762,7 +761,7 @@ label{
         justify-content: space-between;
         gap:70px;    
         .traffic-info{  
-            flex-direction: column;
+        flex-direction: column;
   
        }
     }
@@ -788,16 +787,11 @@ label{
         z-index: -1;
     }
     @media screen and(max-width:1200px){
-        h1{
-        margin-bottom:20px;
-        }
         .traffic-content {
             flex-direction: column;
             margin: 0 auto;
             align-items: center;
             gap:20px;
-    
-        
         }
     }
     
