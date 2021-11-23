@@ -339,14 +339,13 @@ label .hamburger #switch:checked ~ nav {
   position: relative;
   background-size: 105%;
   width: 100%;
-  height: calc(100vw / 1.5);
 }
 
 @media screen and (max-width: 1600px) {
   #concept {
     height: unset;
     background-position: center;
-    background-size: 205%;
+    background-size: 250%;
   }
 }
 
@@ -396,6 +395,7 @@ label .hamburger #switch:checked ~ nav {
           writing-mode: vertical-rl;
   text-orientation: upright;
   margin-top: 40px;
+  margin-bottom: 4rem;
   text-shadow: black 0.1em 0.1em 0.2em;
   line-height: 2;
   letter-spacing: 5px;
@@ -419,8 +419,9 @@ label .hamburger #switch:checked ~ nav {
 
 @media screen and (max-width: 1245px) {
   #concept .container .found {
-    margin-left: 100px;
+    margin-left: 30px;
     margin-top: 10px;
+    padding: 0;
   }
 }
 
